@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
 
 import '../styles/home.scss';
 
@@ -53,7 +52,7 @@ const Home = () => {
         </div>
 
         <div id="ProjectsCarousel" className="projects-carousel">
-          <Link className="carousel-nav-link" to="/fareshare" title="carpooling mobile app">
+          <a className="carousel-nav-link" href="/fareshare" title="carpooling mobile app">
             <div className="project fs-page">
               <h3>facilitating ride-sharing</h3>
 
@@ -63,9 +62,9 @@ const Home = () => {
                 <li>transparency</li>
               </ul>
             </div>
-          </Link>
+          </a>
           
-          <Link className="carousel-nav-link" to="/recipebook" title="cooking web app">
+          <a className="carousel-nav-link" href="/recipebook" title="cooking web app">
             <div className="project rb-page">
               <h3>helping with recipe usage</h3>
 
@@ -75,9 +74,9 @@ const Home = () => {
                 <li>accessibility</li>
               </ul>
             </div>
-          </Link>
+          </a>
 
-          <Link className="carousel-nav-link" to="/govredesign" title=".gov redesign">
+          <a className="carousel-nav-link" href="/govredesign" title=".gov redesign">
             <div className="project gov-rd">
               <h3>assisting in a redesign</h3>
 
@@ -87,8 +86,8 @@ const Home = () => {
                 <li>sales</li>
               </ul>
             </div>
-          </Link>
-          <Link className="carousel-nav-link" to="/storybook" title="pattern library">
+          </a>
+          <a className="carousel-nav-link" href="/storybook" title="pattern library">
             <div className="project rsb-pl">
               <h3>a pattern library</h3>
 
@@ -98,7 +97,7 @@ const Home = () => {
                 <li>storybook.js</li>
               </ul>
             </div>
-          </Link>
+          </a>
         </div>
       </section>
     </React.Fragment>

@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { Link } from 'react-router-dom';
 import ToTop from "../to-top/to-top";
 
 import '../../styles/page.scss';
@@ -54,15 +53,15 @@ const ProjectsLayout = (props: any) => {
           <nav>
             <div className="row fixed-nav">
               <div className="col-12">
-                <Link className="home-link fixed-link" to="/">
+                <a className="home-link fixed-link" href="/">
                   <img className="arrow-left" alt="arrow-left" src="https://res.cloudinary.com/dkcdueneq/image/upload/v1739104581/arrow_es4sej.png"></img>
                   <span>home</span>
-                </Link>
+                </a>
 
-                <Link className="next-link fixed-link" to={nextRoute} title={nextDisplay}>
+                <a className="next-link fixed-link" href={nextRoute} title={nextDisplay}>
                   <span>next</span>
                   <img className="arrow-right" alt="arrow-right" src="https://res.cloudinary.com/dkcdueneq/image/upload/v1739104581/arrow_es4sej.png"></img>
-                </Link>
+                </a>
               </div>
             </div>
           </nav>
