@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "vite-portfolio-62884"
-  }
+    "default": "vite-portfolio-62884",
+    "vite": "myportfolio-caf07"
+  },
+  "targets": {},
+  "etags": {}
 }
