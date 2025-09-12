@@ -180,6 +180,11 @@ img {
   width: 100%;
 }
 
+.gov-page .row div[class^='col-'].hero {
+  margin: 0px 2% 0px 0px;
+  width: 100%;
+}
+
 .hero-content {
   display: flex;
   align-items: center;
@@ -333,6 +338,7 @@ div[class^='col-'] > div p:last-of-type {
     width: 100%;
     height: 50vh;
     justify-content: center;
+    padding: 24px;
 
     img {
       width: 400px;
@@ -415,5 +421,10 @@ div[class^='col-'] > div p:last-of-type {
     .hero-content div:first-of-type {
       padding-right: 0px;
     }
+  }
+
+  .gov-page .row div[class^='col-'].hero {
+    margin: .5rem 2%;
+    width: 100%;
   }
 }

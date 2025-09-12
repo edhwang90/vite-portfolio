@@ -31,7 +31,7 @@ const GovRedesign = () => {
                         </div>
                         <div className="with-image desktop-only">
                           <img alt="USA Flag" src="https://res.cloudinary.com/dkcdueneq/image/upload/v1739208942/flag-vert_bsxcp9.png"></img>
-                      </div>
+                        </div>
                       </div>
                     </div>
                 </div>
