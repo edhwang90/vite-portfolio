@@ -1,0 +1,146 @@
+
+.index-page {
+  h3  {
+    display: inline-block;
+  }
+}
+
+.port-links a {
+  display: inline-block;
+  margin-right: 104px;
+  color: #2d2d2d;
+}
+
+.port-links a:last-of-type {
+  margin-right: 0px;
+}
+
+.projects-carousel {
+  margin-top: 100px;
+  white-space: nowrap;
+  overflow-x: auto;
+  padding: 24px 0px 24px 0px;;
+
+  .project {
+    width: 556px;
+    height: 300px;
+    border-radius: 8px;
+    margin-right: 56px;
+    background-color: #e0e0e0;
+  }
+
+  h3 {
+    background-color: #2d2d2d;
+    color: #ffffff;
+    padding: 16px 36px;
+    margin-top: 24px;
+  }
+
+  ul {
+    list-style: none;
+    margin: 76px 0px 0px 0px;
+    padding: 0;
+
+    li {
+      margin: 0px 36px 0px 0px;
+      display: inline-block;
+      padding: 8px 16px;
+      color: #ffffff;
+      font-weight: bold;
+      background-color: #8a8a8a;
+    }
+
+    li:first-of-type {
+      margin-left: 36px;
+    }
+  }
+
+  .carousel-nav-link {
+    display: inline-block;
+    text-decoration: none;
+  }
+}
+
+.project {
+  &.fs-page {
+    background-color: #66FF88;
+
+    li {
+      background-color: #2BB048;
+    }
+  }
+
+  &.rb-page {
+    background-color: #FFCA40;
+  
+    li {
+      background-color: #F29B18;
+    }
+  }
+
+  &.gov-rd {
+    background-color: #4a9bff;
+  
+    li {
+      background-color: #0B42E7;
+    }
+  }
+
+  &.rsb-pl {
+    background-color: #FD71FF;
+  
+    li {
+      background-color: #BB3AD5;
+    }
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .port-links.pull-right {
+    float: none;
+    margin-top: 16px;
+  }
+
+  .projects-carousel {
+    margin-top: 36px;
+    
+    p, li, a {
+      font-size: 1rem;
+    }
+
+    h3 {
+      padding: 8px 16px;
+    }
+
+    .project {
+      width: 100%;
+      height: auto;
+      padding-bottom: 40px;
+
+      ul {
+        padding: 0px 36px;
+        margin-top: 40px;
+        display: flex;
+        row-gap: 8px;
+        flex-wrap: wrap;
+      }
+
+      li {
+        padding: 4px 8px;
+      }
+
+      li:first-of-type {
+        margin-left: 0px;
+      }
+    }
+
+    .carousel-nav-link {
+      display: block;
+      margin-bottom: 20px;
+    }
+
+    .carousel-nav-link:last-of-type {
+      margin-bottom: 0px;
+    }
+  }
+}
