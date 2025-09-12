@@ -61,8 +61,8 @@ nav {
   }
 }
 
-.details.react-storybook-styles .fixed-link,
-.details.react-storybook-styles .fixed-top button {
+.details.storybook-styles .fixed-link,
+.details.storybook-styles .fixed-top button {
   background-color: #fd71ff;
 }
 
@@ -71,8 +71,8 @@ nav {
   background-color: #ffca40;
 }
 
-.details.gov-financial-app-styles .fixed-link,
-.details.gov-financial-app-styles .fixed-top button {
+.details.govredesign-styles .fixed-link,
+.details.govredesign-styles .fixed-top button {
   background-color: #4a9bff;
 }
 
@@ -155,7 +155,7 @@ img {
   }
 }
 
-.project-bottom.react-storybook-styles {
+.project-bottom.storybook-styles {
   background-color: #66FF88;
 }
 
@@ -167,7 +167,7 @@ img {
   background-color: #59a4ff;
 }
 
-.project-bottom.gov-financial-app-styles {
+.project-bottom.govredesign-styles {
   background-color: #fd71ff;
 }
 
@@ -300,7 +300,7 @@ div[class^='col-'] > div p:last-of-type {
   }
 
   img {
-    margin: 25px 50px;
+    margin: 25px 0px;
     width: 500px;
     border-radius: 8px;
     flex-shrink: 0;
