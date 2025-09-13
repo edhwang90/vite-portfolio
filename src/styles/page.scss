@@ -306,10 +306,18 @@ div[class^='col-'] > div p:last-of-type {
 
   img {
     margin: 25px 0px;
-    width: 500px;
+    width: auto;
+    height: 100vh;
     border-radius: 8px;
     flex-shrink: 0;
     flex-grow: 0;
+  }
+}
+
+.sb-page {
+  img {
+    width: 500px;
+    height: auto;
   }
 }
 
