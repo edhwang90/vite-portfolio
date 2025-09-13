@@ -2,8 +2,9 @@ import React, { useEffect, useState } from "react";
 import ToTop from "../to-top/to-top";
 
 import '../../styles/page.scss';
+import type ProjectsLayoutProps from "../../types/projectlayoutprops";
 
-const ProjectsLayout = (props: any) => {
+const ProjectsLayout = (props: ProjectsLayoutProps) => {
   const { children } = props;
 
   const [nextDisplay, setNextDisplay] = useState('');
