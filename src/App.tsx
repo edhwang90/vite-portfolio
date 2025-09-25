@@ -5,6 +5,7 @@ import Recipebook from './pages/recipebook';
 import Fareshare from './pages/fareshare';
 import GovRedesign from './pages/govredesign';
 import Storybook from './pages/storybook';
+import Sandbox from './pages/sandbox';
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
     <React.Fragment>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/sandbox" element={<Sandbox />} />
         <Route path="/fareshare" element={<Fareshare />} />
         <Route path="/recipebook" element={<Recipebook />} />
         <Route path="/govredesign" element={<GovRedesign />} />

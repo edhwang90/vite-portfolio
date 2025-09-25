@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import Glide from "@glidejs/glide";
 
 import '@glidejs/glide/dist/css/glide.core.min.css';
-import ProjectsLayout from "../components/projects-layout/projects-layout";
+import ProjectsLayout from "../partials/projects-layout/projects-layout";
 
 const GovRedesign = () => {
     useEffect(() => {

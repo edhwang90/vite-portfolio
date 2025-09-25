@@ -1,5 +1,5 @@
 import React from "react";
-import ProjectsLayout from "../components/projects-layout/projects-layout";
+import ProjectsLayout from "../partials/projects-layout/projects-layout";
 
 const Storybook = () => {
   return (
@@ -34,7 +34,7 @@ const Storybook = () => {
           <section className="section-container image-container">
               <div className="row">
                   <div className="col-12">
-                      <a className={`zoom-in asset-xlarge`} href="https://res.cloudinary.com/dkcdueneq/image/upload/v1739110252/storybook-screen_n8z3mc.png" rel="noopener noreferrer" target="_blank"><img src="https://res.cloudinary.com/dkcdueneq/image/upload/v1739110252/storybook-screen_n8z3mc.png" ></img></a>
+                      <a className={`zoom-in asset-xlarge`} href="https://res.cloudinary.com/dkcdueneq/image/upload/v1739110252/storybook-screen_n8z3mc.png" rel="noopener noreferrer" target="_blank"><img className="screenshot" src="https://res.cloudinary.com/dkcdueneq/image/upload/v1739110252/storybook-screen_n8z3mc.png" ></img></a>
                   </div>
               </div>
           </section>
@@ -42,7 +42,7 @@ const Storybook = () => {
           <section className="section-container image-container">
               <div className="row">
                   <div className="col-12">
-                      <a className={`zoom-in asset-xlarge`} href="https://res.cloudinary.com/dkcdueneq/image/upload/v1739110256/code-screen_akc0so.png" rel="noopener noreferrer" target="_blank"><img src="https://res.cloudinary.com/dkcdueneq/image/upload/v1739110256/code-screen_akc0so.png" ></img></a>
+                      <a className={`zoom-in asset-xlarge`} href="https://res.cloudinary.com/dkcdueneq/image/upload/v1739110256/code-screen_akc0so.png" rel="noopener noreferrer" target="_blank"><img className="screenshot" src="https://res.cloudinary.com/dkcdueneq/image/upload/v1739110256/code-screen_akc0so.png" ></img></a>
                   </div>
               </div>
           </section>

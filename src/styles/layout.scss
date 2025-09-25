@@ -90,6 +90,10 @@ a {
   cursor: pointer;
 }
 
+svg path {
+  fill: #2d2d2d;
+}
+
 .desktop-only {
   display: block;
 }
@@ -153,6 +157,11 @@ a {
 
 .wrapper-container li p:last-of-type {
   margin-bottom: 24px;
+}
+
+.nav-arrow {
+  width: 48px;
+  height: auto;
 }
 
 @media only screen and (max-width: 720px) {

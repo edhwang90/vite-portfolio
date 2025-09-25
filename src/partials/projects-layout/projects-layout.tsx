@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
-import ToTop from "../to-top/to-top";
+import ToTop from "../../components/to-top/to-top";
 
 import '../../styles/page.scss';
-import type ProjectsLayoutProps from "../../types/projectlayoutprops";
+import type ProjectsLayoutProps from "../../types/types";
+import { ArrowLeftIcon, ArrowRightIcon } from "@phosphor-icons/react";
 
 const ProjectsLayout = (props: ProjectsLayoutProps) => {
   const { children } = props;
@@ -13,6 +14,10 @@ const ProjectsLayout = (props: ProjectsLayoutProps) => {
 
   const nextProject = (currentPage: string) => {
     switch (currentPage) {
+      case 'sandbox':
+        setNextDisplay('a carpooling mobile app');
+        setNextRoute('/fareshare');
+        break;
       case 'fareshare':
         setNextDisplay('a cooking web app');
         setNextRoute('/recipebook');
@@ -26,12 +31,12 @@ const ProjectsLayout = (props: ProjectsLayoutProps) => {
         setNextRoute('/storybook');
         break;
       case 'storybook':
-        setNextDisplay('a carpooling mobile app');
-        setNextRoute('/fareshare');
+        setNextDisplay('a front-end dev sandbox');
+        setNextRoute('/sandbox');
         break;
       default:
-        setNextDisplay('a carpooling mobile app');
-        setNextRoute('/fareshare');
+        setNextDisplay('a front-end dev sandbox');
+        setNextRoute('/sandbox');
         break;
     }
   }
@@ -55,13 +60,14 @@ const ProjectsLayout = (props: ProjectsLayoutProps) => {
             <div className="row fixed-nav">
               <div className="col-12">
                 <a className="home-link fixed-link" href="/">
-                  <img className="arrow-left" alt="arrow-left" src="https://res.cloudinary.com/dkcdueneq/image/upload/v1739104581/arrow_es4sej.png"></img>
+                  <ArrowLeftIcon className="nav-arrow" />
                   <span>home</span>
                 </a>
 
                 <a className="next-link fixed-link" href={nextRoute} title={nextDisplay}>
                   <span>next</span>
-                  <img className="arrow-right" alt="arrow-right" src="https://res.cloudinary.com/dkcdueneq/image/upload/v1739104581/arrow_es4sej.png"></img>
+                  <ArrowRightIcon className="nav-arrow" />
+                  {/* <img className="arrow-right" alt="arrow-right" src="https://res.cloudinary.com/dkcdueneq/image/upload/v1739104581/arrow_es4sej.png"></img> */}
                 </a>
               </div>
             </div>

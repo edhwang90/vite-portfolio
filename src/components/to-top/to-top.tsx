@@ -1,3 +1,5 @@
+import { ArrowUpIcon } from "@phosphor-icons/react";
+
 const ToTop = () => {
 
   const onClick = () => {
@@ -12,7 +14,7 @@ const ToTop = () => {
     <div className="fixed-top">
       <button onClick={onClick} className="home-link fixed-link">
         <span>top</span>
-        <img className="arrow-up" alt="arrow-up" src="https://res.cloudinary.com/dkcdueneq/image/upload/v1739206312/arrow-up_vviivr.png"></img>
+        <ArrowUpIcon className="nav-arrow" />
       </button>
     </div>
   )
