@@ -14,10 +14,11 @@ const Home = () => {
 
         <div className="port-links pull-right">
           <a title="Resume"
+            className="to-bold"
             href="https://drive.google.com/file/d/12HREhXkfXXBlZdbBTZWuId3ab8WiKxSs/view?usp=sharing"
             rel="noopener noreferrer"
             target="_blank">
-              <b>resume</b>
+              resume
           </a>
           <a title="LinkedIn"
             href="https://www.linkedin.com/in/edmond-hwang-3614902aa/"

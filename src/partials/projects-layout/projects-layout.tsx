@@ -3,7 +3,7 @@ import ToTop from "../../components/to-top/to-top";
 
 import '../../styles/page.scss';
 import type ProjectsLayoutProps from "../../types/types";
-import { ArrowLeftIcon, ArrowRightIcon } from "@phosphor-icons/react";
+import { ArrowRightIcon, HouseSimpleIcon } from "@phosphor-icons/react";
 
 const ProjectsLayout = (props: ProjectsLayoutProps) => {
   const { children } = props;
@@ -56,18 +56,19 @@ const ProjectsLayout = (props: ProjectsLayoutProps) => {
     <React.Fragment>
       <div className="content-container">
         <div className={`details ${project}-styles`}>
-          <nav>
+          <nav className="projects-nav">
             <div className="row fixed-nav">
               <div className="col-12">
+           
                 <a className="home-link fixed-link" href="/">
-                  <ArrowLeftIcon className="nav-arrow" />
+                  <HouseSimpleIcon className="nav-arrow" />
                   <span>home</span>
                 </a>
 
                 <a className="next-link fixed-link" href={nextRoute} title={nextDisplay}>
                   <span>next</span>
                   <ArrowRightIcon className="nav-arrow" />
-                  {/* <img className="arrow-right" alt="arrow-right" src="https://res.cloudinary.com/dkcdueneq/image/upload/v1739104581/arrow_es4sej.png"></img> */}
+                 
                 </a>
               </div>
             </div>

@@ -1,3 +1,4 @@
+$link-color: #1CADFF;
 
 nav {
   z-index: 2;
@@ -62,6 +63,13 @@ nav {
     margin-right: 0px;
   }
 }
+
+.fixed-link:hover {
+  span {
+    text-decoration: underline;
+  }
+}
+
 .details.sandbox-styles .fixed-link,
 .details.sandbox-styles .fixed-top button {
   background-color: #83F5FF;
@@ -160,6 +168,10 @@ img {
     }
   }
 
+  a:hover span {
+    text-decoration: underline;
+  }
+
   .arrow-right-long {
     width: 100px;
     height: auto;
@@ -201,10 +213,20 @@ img {
   align-items: center;
   padding-right: 56px;
   padding-left: 56px;
+
+  a:hover {
+    text-decoration: underline;
+    color: $link-color;
+  }
 }
 
 .hero-content, .hero-image {
   flex: 50 1;
+}
+
+.sb-page .hero-content, .sandbox-page .hero-content {
+  width: 100%;
+  justify-content: space-between;
 }
 
 .fareshare-page .hero-image {
@@ -346,6 +368,7 @@ div[class^='col-'] > div p:last-of-type {
 .with-split-hero {
   flex-direction: column;
   align-items: center;
+  min-width: 420px;
 
   .hero-top {
     flex-grow: 1;
@@ -371,7 +394,7 @@ div[class^='col-'] > div p:last-of-type {
     padding: 24px;
 
     img {
-      width: 400px;
+      width: 280px;
       align-self: center;
     }
   }
@@ -379,7 +402,8 @@ div[class^='col-'] > div p:last-of-type {
 
 .sandbox-page {
   .with-split-hero {
-    width: 100%;
+    width: 50%;
+    min-width: 360px;
 
     .hero-bot {
       background-color: #f7f7f7;
@@ -391,18 +415,18 @@ div[class^='col-'] > div p:last-of-type {
   }
 }
 
-@media only screen and (max-width: 720px) {
-  // .section-container {
-  //   min-height: 256px;
-  // }
+@media only screen and (max-width: 820px) {
+  .fareshare-page, .rb-page, .gov-page, .sb-page, .sandbox-page {
+    height: 100vh;
+  }
 
   .row {
     display: initial;
   }
 
-  .hero-content {
-    padding-top: 112px;
-  }
+  // .hero-content {
+  //   padding-top: 112px;
+  // }
 
   .row div[class^='col-'].hero {
     margin: .5rem 2%;
@@ -462,6 +486,7 @@ div[class^='col-'] > div p:last-of-type {
   }
 
   .gov-page, .sb-page, .sandbox-page {
+
     .hero-content div:first-of-type {
       padding-right: 0px;
     }
@@ -474,5 +499,21 @@ div[class^='col-'] > div p:last-of-type {
   .gov-page .row div[class^='col-'].hero {
     margin: .5rem 2%;
     width: 100%;
+  }
+
+}
+
+@media only screen and (min-width: 1200px) {
+  .gov-page .hero-content img {
+    width: auto;
+    height: 100vh
+  }
+
+  .sb-page .with-split-hero {
+    width: 50%;
+  }
+
+  .sandbox-page .with-split-hero {
+    width: 50%;
   }
 }
