@@ -12,6 +12,7 @@
   "dependencies": {
     "@glidejs/glide": "^3.7.1",
     "@phosphor-icons/react": "^2.1.10",
+    "posthog-js": "^1.334.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-router-dom": "^7.9.1"
