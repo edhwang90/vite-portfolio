@@ -2,8 +2,11 @@ import React, { useEffect, useState } from "react";
 import ToTop from "../../components/to-top/to-top";
 
 import '../../styles/page.scss';
+import './projects-layout.scss';
+
 import type ProjectsLayoutProps from "../../types/types";
 import { ArrowRightIcon, HouseSimpleIcon } from "@phosphor-icons/react";
+import { projectsJson } from '../../projects-json';
 
 const ProjectsLayout = (props: ProjectsLayoutProps) => {
   const { children } = props;
@@ -75,15 +78,69 @@ const ProjectsLayout = (props: ProjectsLayoutProps) => {
           </nav>
 
           { children }
-
-          <div className={`project-bottom ${project}-styles`}>
+          <div className="row border-top">
+            <div className="col-12">
+              <div className="bottom-nav">
+                <ul>
+                  {
+                    projectsJson.map((project) => {
+                      return (
+                        <li>
+                          <a href={project.route}
+                             title={project.title}>{project.title}
+                          </a>
+                          <span>({project.type})</span>
+                        </li>
+                      )
+                    })
+                  }
+                </ul>
+                
+                <ul>
+                  <li>
+                    <a title="Home"
+                      href="/">
+                        home
+                    </a>
+                  </li>
+                  <li>
+                    <a title="Resume"
+                      className="to-bold"
+                      href="https://drive.google.com/file/d/12HREhXkfXXBlZdbBTZWuId3ab8WiKxSs/view?usp=sharing"
+                      rel="noopener noreferrer"
+                      target="_blank">
+                        resume
+                    </a>
+                  </li>
+                  <li>
+                    <a title="LinkedIn"
+                      href="https://www.linkedin.com/in/edmond-hwang-3614902aa/"
+                      rel="noopener noreferrer"
+                      target="_blank">
+                        linkedin
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      title="GitHub"
+                      href="https://github.com/edhwang90"
+                      rel="noopener noreferrer"
+                      target="_blank">
+                        github
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          {/* <div className={`project-bottom ${project}-styles`}>
             <a href={nextRoute} title={nextDisplay}>
               <span>
                 { nextDisplay }
               </span>
               <img className="arrow-right-long" alt="arrow-right" src="https://res.cloudinary.com/dkcdueneq/image/upload/v1739108219/arrow-right-long-light_1_qchclz.png"></img>
             </a>
-          </div>
+          </div> */}
 
           <nav className="nav-page">
             <div className="row">

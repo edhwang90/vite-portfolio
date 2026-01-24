@@ -9,7 +9,8 @@ export const projectsJson: Project[] = [
       'miscellaneous'
     ],
     route: '/sandbox',
-    color: '#83F5FF'
+    color: '#FFCA40',
+    type: 'dev'
   },
   {
     title: 'facilitating ride-sharing',
@@ -19,7 +20,8 @@ export const projectsJson: Project[] = [
       'transparency'
     ],
     route: '/fareshare',
-    color: '#66FF88'
+    color: '#66FF88',
+    type: 'design'
   },
   {
     title: 'helping with recipe usage',
@@ -29,7 +31,8 @@ export const projectsJson: Project[] = [
       'accessibility'
     ],
     route: '/recipebook',
-    color: '#FFCA40'
+    color: '#66FF88',
+    type: 'design'
   },
   {
     title: 'assisting in a redesign',
@@ -39,7 +42,8 @@ export const projectsJson: Project[] = [
       'sales'
     ],
     route: '/govredesign',
-    color: '#4a9bff'
+    color: '#66FF88',
+    type: 'design'
   },
   {
     title: 'a pattern library',
@@ -49,6 +53,7 @@ export const projectsJson: Project[] = [
       'forms'
     ],
     route: '/storybook',
-    color: '#FD71FF'
+    color: '#FFCA40',
+    type: 'dev'
   }
 ]

@@ -27,7 +27,7 @@ nav {
   float: right;
 
   button {
-    background-color: #FFCA40;
+    background-color: #66FF88;
     border: transparent;
     cursor: pointer;
     display: flex;
@@ -72,22 +72,22 @@ nav {
 
 .details.sandbox-styles .fixed-link,
 .details.sandbox-styles .fixed-top button {
-  background-color: #83F5FF;
+  background-color: #FFCA40;
 }
 
 .details.storybook-styles .fixed-link,
 .details.storybook-styles .fixed-top button {
-  background-color: #fd71ff;
+  background-color: #FFCA40;
 }
 
 .details.recipebook-styles .fixed-link,
 .details.recipebook-styles .fixed-top button {
-  background-color: #ffca40;
+  background-color: #66FF88;
 }
 
 .details.govredesign-styles .fixed-link,
 .details.govredesign-styles .fixed-top button {
-  background-color: #4a9bff;
+  background-color: #66FF88;
 }
 
 .home-link {
@@ -178,25 +178,25 @@ img {
   }
 }
 
-.project-bottom.storybook-styles {
-  background-color: #83F5FF;
-}
+// .project-bottom.storybook-styles {
+//   background-color: #83F5FF;
+// }
 
-.project-bottom.fareshare-styles {
-  background-color: #ffca40;
-}
+// .project-bottom.fareshare-styles {
+//   background-color: #ffca40;
+// }
 
-.project-bottom.recipebook-styles {
-  background-color: #59a4ff;
-}
+// .project-bottom.recipebook-styles {
+//   background-color: #59a4ff;
+// }
 
-.project-bottom.govredesign-styles {
-  background-color: #fd71ff;
-}
+// .project-bottom.govredesign-styles {
+//   background-color: #fd71ff;
+// }
 
-.project-bottom.sandbox-styles {
-  background-color: #66FF88;
-}
+// .project-bottom.sandbox-styles {
+//   background-color: #66FF88;
+// }
 
 .hero {
   display: flex;

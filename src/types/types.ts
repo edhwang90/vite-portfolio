@@ -6,5 +6,6 @@ export interface Project {
   title: string,
   tags: string[],
   route: string,
-  color: string
+  color: string,
+  type: string
 }

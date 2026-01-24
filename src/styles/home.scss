@@ -95,18 +95,46 @@ $link-color: #1CADFF;
   }
 
   &.gov-rd {
-    background-color: #4a9bff;
+    background-color: #66FF88;
   
     li {
-      background-color: #0B42E7;
+      background-color: #2BB048;
     }
   }
 
   &.rsb-pl {
-    background-color: #FD71FF;
+    background-color: #FFCA40;
   
     li {
-      background-color: #BB3AD5;
+      background-color: #F29B18;
+    }
+  }
+}
+
+.projects-wrapper {
+  &.row {
+    margin-left: 0px;
+    margin-right: 0px;
+    display: flex;
+    align-items: start;
+  }
+  
+  .projects-legend {
+    margin-top: 56px;
+    position: fixed;
+
+    span {
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      margin-right: 16px;
+      border-radius: 50%;
+      border: 2px solid #2d2d2d;
+      background-color: #66FF88;
+    }
+
+    span.dev {
+      background-color: #FFCA40;
     }
   }
 }
@@ -163,5 +191,16 @@ $link-color: #1CADFF;
 
   .project-card .tag {
     font-size: 0.875rem;
+  }
+
+  .projects-wrapper {
+    &.row {
+      flex-direction: column;
+    }
+
+    .projects-legend {
+      position: initial;
+      margin-top: 24px;
+    }
   }
 }

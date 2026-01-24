@@ -11,10 +11,12 @@ const ProjectCards = ({ projects } : { projects: Project[] }) => {
       <div className="project-cards">
         {
           projects.map((project: Project, index: number) => {
-            const { title, tags, route, color } = project;
+            const { title, tags, route, type } = project;
+
+            const typeColor = type === 'dev' ? '#FFCA40' : '#66FF88';
 
             return (
-              <ProjectCard title={title} tags={tags} route={route} color={color} key={index} />
+              <ProjectCard title={title} tags={tags} route={route} color={typeColor} key={index} />
             )
           })
         }
