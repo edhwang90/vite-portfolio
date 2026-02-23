@@ -1,6 +1,8 @@
 import { ArrowUpIcon } from "@phosphor-icons/react";
+import { useEffect, useState } from "react";
 
 const ToTop = () => {
+  const [showTop, setShowTop] = useState(false);
 
   const onClick = () => {
     window.scrollTo({
@@ -10,12 +12,30 @@ const ToTop = () => {
     });
   }
 
+  useEffect(() => {
+    const handleScroll = (e) => {
+      if (window.pageYOffset > 0) {
+        setShowTop(true);
+      } else { setShowTop(false) }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <div className="fixed-top">
-      <button onClick={onClick} className="home-link fixed-link">
-        <span>top</span>
-        <ArrowUpIcon className="nav-arrow" />
-      </button>
+      {
+        showTop &&
+        <button onClick={onClick} className="top-link">
+          <span>top</span>
+          <ArrowUpIcon className="nav-arrow" />
+        </button>
+      }
+
     </div>
   )
 }
