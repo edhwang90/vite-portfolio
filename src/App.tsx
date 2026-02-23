@@ -22,7 +22,6 @@ function App() {
     // cleans up tab experience
     disableFocus('.side-menu-action');
 
-    console.log('asdf', location);
     if (location.pathname !== '/') setIsHome(false);
   }, [disableFocus, location])
 

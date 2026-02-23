@@ -352,10 +352,6 @@ div[class^='col-'] > div p:last-of-type {
 }
 
 .gov-page {
-  .hero-content {
-    height: 100vh;
-  }
-
   img {
     width: 400px;
     height: auto;
@@ -510,7 +506,7 @@ div[class^='col-'] > div p:last-of-type {
 @media only screen and (min-width: 1200px) {
   .gov-page .hero-content img {
     width: auto;
-    height: 100vh
+    height: 80vh
   }
 
   .sb-page .with-split-hero {

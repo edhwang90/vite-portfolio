@@ -88,9 +88,9 @@ const ProjectsLayout = (props: ProjectsLayoutProps) => {
               <div className="bottom-nav">
                 <ul>
                   {
-                    projectsJson.map((project) => {
+                    projectsJson.map((project, index) => {
                       return (
-                        <li>
+                        <li key={`project-key-${index}`}>
                           <a href={project.route}
                              title={project.title}>{project.title}
                           </a>
