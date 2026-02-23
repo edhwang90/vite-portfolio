@@ -429,7 +429,7 @@ div[class^='col-'] > div p:last-of-type {
 
 @media only screen and (max-width: 820px) {
   .fareshare-page, .rb-page, .gov-page, .sb-page, .sandbox-page {
-    height: 100vh;
+    margin-top: 24px;
   }
 
   .row {
