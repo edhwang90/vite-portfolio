@@ -60,27 +60,27 @@ const ProjectsLayout = (props: ProjectsLayoutProps) => {
   }, [window.location.pathname]);
 
   return (
-    <React.Fragment>
-      <div className="content-container">
-        <div className={`details ${project}-styles`}>
-          <nav className="projects-nav">
-            <div className="row fixed-nav">
-              <div className="col-12">
-           
-                <a className="home-link fixed-link" onClick={goBack}>
-                  <ArrowLeftIcon  className="nav-arrow"/>
-                  <span>back</span>
-                </a>
+    <>
+      <nav className="projects-nav">
+        <div className="row fixed-nav">
+          <div className="col-12">
+        
+            <a className="home-link fixed-link" onClick={goBack}>
+              <ArrowLeftIcon  className="nav-arrow"/>
+              <span>back</span>
+            </a>
 
-                <a className="next-link fixed-link" href={nextRoute} title={nextDisplay}>
-                  <span>next</span>
-                  <ArrowRightIcon  className="nav-arrow" />
-                 
-                </a>
-              </div>
-            </div>
-          </nav>
-          
+            <a className="next-link fixed-link" href={nextRoute} title={nextDisplay}>
+              <span>next</span>
+              <ArrowRightIcon  className="nav-arrow" />
+              
+            </a>
+          </div>
+        </div>
+      </nav>
+      <div className="content-container">
+        <div className={`details project-styles`}>
+        
           { children }
 
           <div className="row border-top">
@@ -156,7 +156,7 @@ const ProjectsLayout = (props: ProjectsLayoutProps) => {
           </nav>
         </div>
       </div>
-    </React.Fragment>
+    </>
   )
 }
 

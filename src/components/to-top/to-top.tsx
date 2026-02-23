@@ -31,7 +31,7 @@ const ToTop = () => {
       {
         showTop &&
         <button onClick={onClick} className="top-link">
-          <span>top</span>
+          <span>to top</span>
           <ArrowUpIcon className="nav-arrow" />
         </button>
       }
