@@ -26,7 +26,7 @@ const Recipebook = () => {
                         <div>
                             <h3>Helping to utilize recipes.</h3>
                             <p>
-                            Conceptualized after a GV design sprint involving the cooking space, .Recipebook is a web application meant to complement recipe and excess food utilization.
+                            Conceptualized after a GV design sprint involving the cooking space, .Recipebook is a web application meant to complement recipe organization and utilization.
                             </p>
                             <p><a rel="noopener noreferrer" href="https://www.figma.com/design/rYZ467LTF7w8O9wjnKyBUY/.Recipebook-for-Portfolio?node-id=1-2&t=fvipWlc5U2HyBH3T-1" title="Figma link" target="_blank">figma link</a></p>
                         </div>
@@ -43,21 +43,21 @@ const Recipebook = () => {
                         <div className='glide'>
                             <div className='glide__track' data-glide-el='track'>
                                 <ul className='glide__slides'>
-                                <li className='glide__slide slider'>
-                                    <a className={`zoom-in asset-xlarge`} href="https://res.cloudinary.com/dkcdueneq/image/upload/v1742727819/mock-home_yeduam.png" rel="noopener noreferrer" target="_blank"><img src="https://res.cloudinary.com/dkcdueneq/image/upload/v1742727819/mock-home_yeduam.png" ></img></a>
-                                </li>
-                                <li className='glide__slide slider'>
-                                    <a className={`zoom-in asset-xlarge`} href="https://res.cloudinary.com/dkcdueneq/image/upload/v1742727819/mock-recipes_ikpprz.png" rel="noopener noreferrer" target="_blank"><img src="https://res.cloudinary.com/dkcdueneq/image/upload/v1742727819/mock-recipes_ikpprz.png" ></img></a>
-                                </li>
-                                <li className='glide__slide slider'>
-                                <a className={`zoom-in asset-xlarge`} href="https://res.cloudinary.com/dkcdueneq/image/upload/v1742727819/mock-new_ytd0o9.png" rel="noopener noreferrer" target="_blank"><img src="https://res.cloudinary.com/dkcdueneq/image/upload/v1742727819/mock-new_ytd0o9.png" ></img></a>
-                                </li>
-                                <li className='glide__slide slider'>
-                                    <a className={`zoom-in asset-xlarge`} href="https://res.cloudinary.com/dkcdueneq/image/upload/v1742727819/mock-details_eqdj09.png" rel="noopener noreferrer" target="_blank"><img src="https://res.cloudinary.com/dkcdueneq/image/upload/v1742727819/mock-details_eqdj09.png" ></img></a>
-                                </li>
-                                <li className='glide__slide slider'>
-                                    <a className={`zoom-in asset-xlarge`} href="https://res.cloudinary.com/dkcdueneq/image/upload/v1742727819/mock-pantry_jd3suh.png" rel="noopener noreferrer" target="_blank"><img src="https://res.cloudinary.com/dkcdueneq/image/upload/v1742727819/mock-pantry_jd3suh.png" ></img></a>
-                                </li>
+                                    <li className='glide__slide slider'>
+                                        <a className={`zoom-in asset-xlarge`} href="https://res.cloudinary.com/dkcdueneq/image/upload/v1742727819/mock-details_eqdj09.png" rel="noopener noreferrer" target="_blank"><img src="https://res.cloudinary.com/dkcdueneq/image/upload/v1742727819/mock-details_eqdj09.png" ></img></a>
+                                    </li>
+                                    <li className='glide__slide slider'>
+                                        <a className={`zoom-in asset-xlarge`} href="https://res.cloudinary.com/dkcdueneq/image/upload/v1742727819/mock-home_yeduam.png" rel="noopener noreferrer" target="_blank"><img src="https://res.cloudinary.com/dkcdueneq/image/upload/v1742727819/mock-home_yeduam.png" ></img></a>
+                                    </li>
+                                    <li className='glide__slide slider'>
+                                        <a className={`zoom-in asset-xlarge`} href="https://res.cloudinary.com/dkcdueneq/image/upload/v1742727819/mock-recipes_ikpprz.png" rel="noopener noreferrer" target="_blank"><img src="https://res.cloudinary.com/dkcdueneq/image/upload/v1742727819/mock-recipes_ikpprz.png" ></img></a>
+                                    </li>
+                                    <li className='glide__slide slider'>
+                                    <a className={`zoom-in asset-xlarge`} href="https://res.cloudinary.com/dkcdueneq/image/upload/v1742727819/mock-new_ytd0o9.png" rel="noopener noreferrer" target="_blank"><img src="https://res.cloudinary.com/dkcdueneq/image/upload/v1742727819/mock-new_ytd0o9.png" ></img></a>
+                                    </li>
+                                    <li className='glide__slide slider'>
+                                        <a className={`zoom-in asset-xlarge`} href="https://res.cloudinary.com/dkcdueneq/image/upload/v1742727819/mock-pantry_jd3suh.png" rel="noopener noreferrer" target="_blank"><img src="https://res.cloudinary.com/dkcdueneq/image/upload/v1742727819/mock-pantry_jd3suh.png" ></img></a>
+                                    </li>
                                 </ul>
                             </div>
                             <div className="glide__arrows" data-glide-el="controls">
