@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import ToTop from "../../components/to-top/to-top";
 
 import '../../styles/page.scss';
@@ -13,7 +13,6 @@ const ProjectsLayout = (props: ProjectsLayoutProps) => {
 
   const [nextDisplay, setNextDisplay] = useState('');
   const [nextRoute, setNextRoute] = useState('/');
-  const [project, setProject] = useState(window.location.pathname || '');
 
   const nextProject = (currentPage: string) => {
     switch (currentPage) {
@@ -56,7 +55,6 @@ const ProjectsLayout = (props: ProjectsLayoutProps) => {
     }
 
     nextProject(window.location.pathname.replace('/', ''));
-    setProject(window.location.pathname.replace('/', ''));
   }, [window.location.pathname]);
 
   return (

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import Home from './pages/home';
 import { Route, Routes, useLocation } from 'react-router-dom';
 import Recipebook from './pages/recipebook';
@@ -10,7 +10,6 @@ import useMenuHandler from './hooks/useMenuHandler';
 
 import { ListIcon, XIcon } from "@phosphor-icons/react";
 import './App.scss';
-import { projectsJson } from './projects-json';
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

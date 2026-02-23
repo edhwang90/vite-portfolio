@@ -8,6 +8,7 @@ nav.projects-nav, nav.nav-page {
   right: 0;
   //right: calc(var(--scrollbar-width) + 0px);
   border-bottom: 1px solid #e4e4e7;
+  background-color: #ffffff;
 
   a {
     text-decoration: none;
@@ -31,6 +32,7 @@ nav.projects-nav, nav.nav-page {
 
 nav.nav-page {
   border-bottom: none;
+  background-color: transparent;
 }
 
 .fixed-top {
@@ -52,7 +54,7 @@ nav.nav-page {
   align-items: center;
   padding: 6px 8px;
   border: 2px solid #2d2d2d;
-  background-color: #e4e4e7;
+  background-color: #ffffff;
   border-radius: 8px;
 
   span {
