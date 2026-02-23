@@ -1,0 +1,167 @@
+$font-color: #2d2d2d;
+$link-hover-color: #1CADFF;
+$white: #ffffff;
+$bg-grey: #f7f7f7;
+$light-grey: #e4e4e7;
+$medium-grey: #bababa;
+$danger: #ef4444;
+$danger-highlight: #FFE6E6;
+$success: #22c55e;
+$success-highlight: #D1FFE2;
+$warning: #fbbf24;
+$warning-highlight: #FFF4D1;
+$transition: .5s;
+$side-menu-width: 212px;
+
+// Default state styles (menu is hidden)
+.content-all-wrapper {
+  position: relative;
+  transition: $transition;
+}
+
+.side-menu {
+  overflow-y: auto;
+
+  // positions the menu on reveal
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: $side-menu-width;  
+  transform: translate3d(-100%, 0, 0); // hides menu
+  transition: $transition;
+  z-index: 2;
+
+  // styling
+  background-color: $white;
+  border-right: 1px solid $light-grey;
+
+  .item {
+    transition: $transition;
+  }
+}
+
+// Show state styles (menu is showing)
+.menu-active {  
+  .content-all-wrapper {
+    // moves page to right
+    transform: translate3d($side-menu-width, 0, 0);
+  }
+  
+  .side-menu {
+    // moves menu to right, revealing it
+    transform: translate3d(0,0,0);
+  }  
+}
+
+.side-menu-other {
+  margin-top: 112px;
+}
+
+.side-menu {
+  padding: 16px 24px;
+}
+
+.side-menu-main {
+  margin-top: 56px;
+  margin-bottom: 56px;
+}
+
+.side-menu-main, .side-menu-other {
+  li {
+    margin-bottom: 16px;
+
+    &:last-of-type {
+      margin-bottom: 0px;
+    }
+  }
+}
+
+.close-button, .menu-button {
+  border-radius: 8px;
+}
+
+// nav bar
+.nav-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 24px;
+  border-bottom: 1px solid $light-grey;
+  z-index: 1;
+
+  button:hover {
+    outline: auto;
+    outline-color: $link-hover-color;
+    outline-style: dotted;
+  }
+}
+
+.nav-right-links {
+  display: flex;
+  align-items: center;
+
+  a {
+    margin-right: 24px;
+
+    &:last-of-type {
+      margin-right: 0px;
+    }
+  }
+}
+
+// icons
+.icon {
+  color: $font-color;
+}
+
+.menu-icon, .x-icon {
+  width: 36px;
+  height: auto;
+}
+
+.project-nav {
+  background-color: $white;
+}
+
+.nav-bar, .side-menu {
+  button {
+    outline: none;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    span {
+        margin-left: 8px;
+      font-weight: 500;
+    }
+  }
+}
+
+// media queries
+@media only screen and (max-width: 720px) {
+  .nav-bar {
+    padding: 8px 12px;
+  }
+  
+  .side-menu {
+    width: 100%;
+    z-index: 2;
+  }
+
+  .menu-button {
+    justify-content: left;
+    margin-bottom: 16px;
+    width: fit-content;
+  }
+
+  .nav-bar {
+    display: flex;
+    flex-direction: column;
+  }
+}

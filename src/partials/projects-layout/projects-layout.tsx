@@ -5,7 +5,7 @@ import '../../styles/page.scss';
 import './projects-layout.scss';
 
 import type ProjectsLayoutProps from "../../types/types";
-import { ArrowRightIcon, HouseSimpleIcon } from "@phosphor-icons/react";
+import { ArrowLeftIcon, ArrowRightIcon } from "@phosphor-icons/react";
 import { projectsJson } from '../../projects-json';
 
 const ProjectsLayout = (props: ProjectsLayoutProps) => {
@@ -17,15 +17,15 @@ const ProjectsLayout = (props: ProjectsLayoutProps) => {
 
   const nextProject = (currentPage: string) => {
     switch (currentPage) {
+      case 'recipebook':
+        setNextDisplay('a front-end dev sandbox');
+        setNextRoute('/sandbox');
+        break;
       case 'sandbox':
         setNextDisplay('a carpooling mobile app');
         setNextRoute('/fareshare');
         break;
       case 'fareshare':
-        setNextDisplay('a cooking web app');
-        setNextRoute('/recipebook');
-        break;
-      case 'recipebook':
         setNextDisplay('a .gov redesign');
         setNextRoute('/govredesign');
         break;
@@ -34,14 +34,18 @@ const ProjectsLayout = (props: ProjectsLayoutProps) => {
         setNextRoute('/storybook');
         break;
       case 'storybook':
-        setNextDisplay('a front-end dev sandbox');
-        setNextRoute('/sandbox');
+        setNextDisplay('a cooking web app');
+        setNextRoute('/recipebook');
         break;
       default:
         setNextDisplay('a front-end dev sandbox');
         setNextRoute('/sandbox');
         break;
     }
+  }
+
+  const goBack = () => {
+    window.history.back();
   }
 
   useEffect(() => {
@@ -63,21 +67,22 @@ const ProjectsLayout = (props: ProjectsLayoutProps) => {
             <div className="row fixed-nav">
               <div className="col-12">
            
-                <a className="home-link fixed-link" href="/">
-                  <HouseSimpleIcon className="nav-arrow" />
-                  <span>home</span>
+                <a className="home-link fixed-link" onClick={goBack}>
+                  <ArrowLeftIcon  className="nav-arrow"/>
+                  <span>back</span>
                 </a>
 
                 <a className="next-link fixed-link" href={nextRoute} title={nextDisplay}>
                   <span>next</span>
-                  <ArrowRightIcon className="nav-arrow" />
+                  <ArrowRightIcon  className="nav-arrow" />
                  
                 </a>
               </div>
             </div>
           </nav>
-
+          
           { children }
+
           <div className="row border-top">
             <div className="col-12">
               <div className="bottom-nav">

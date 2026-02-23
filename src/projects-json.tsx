@@ -2,6 +2,17 @@ import type { Project } from "./types/types";
 
 export const projectsJson: Project[] = [
   {
+    title: 'helping with recipe usage',
+    tags: [
+      'web',
+      'responsive',
+      'PWA focus'
+    ],
+    route: '/recipebook',
+    color: '#66FF88',
+    type: 'design'
+  },
+  {
     title: 'a front-end dev sandbox',
     tags: [
       'react & typescript',
@@ -20,17 +31,6 @@ export const projectsJson: Project[] = [
       'transparency'
     ],
     route: '/fareshare',
-    color: '#66FF88',
-    type: 'design'
-  },
-  {
-    title: 'helping with recipe usage',
-    tags: [
-      'web',
-      'AI',
-      'accessibility'
-    ],
-    route: '/recipebook',
     color: '#66FF88',
     type: 'design'
   },
