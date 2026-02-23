@@ -13,7 +13,7 @@ const ToTop = () => {
   }
 
   useEffect(() => {
-    const handleScroll = (e) => {
+    const handleScroll = () => {
       if (window.pageYOffset > 0) {
         setShowTop(true);
       } else { setShowTop(false) }
