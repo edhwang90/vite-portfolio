@@ -74,11 +74,11 @@ function App() {
             <li>
               <a
                 className="side-menu-action"
-                title="GitHub"
-                href="https://github.com/edhwang90"
+                title="Behance"
+                href="https://www.behance.net/edyhwang1"
                 rel="noopener noreferrer"
                 target="_blank">
-                  github
+                  behance
               </a>
             </li>
           </ul>
