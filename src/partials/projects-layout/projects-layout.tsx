@@ -125,11 +125,11 @@ const ProjectsLayout = (props: ProjectsLayoutProps) => {
                   </li>
                   <li>
                     <a
-                      title="Behance"
-                      href="https://www.behance.net/edyhwang1"
+                      title="GitHub"
+                      href="https://github.com/edhwang90"
                       rel="noopener noreferrer"
                       target="_blank">
-                        behance
+                        github
                     </a>
                   </li>
                 </ul>
