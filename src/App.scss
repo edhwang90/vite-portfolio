@@ -164,7 +164,8 @@ $side-menu-width: 212px;
   }
 }
 
-.react-select__placeholder {
+.react-select__placeholder,
+.react-select__single-value {
   padding-right: 24px;
   font-size: 1.25rem;
 }
