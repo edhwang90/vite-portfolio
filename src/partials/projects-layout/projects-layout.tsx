@@ -109,18 +109,28 @@ const ProjectsLayout = (props: ProjectsLayoutProps) => {
                   <li>
                     <a title="Resume"
                       className="to-bold"
-                      href="https://drive.google.com/file/d/12HREhXkfXXBlZdbBTZWuId3ab8WiKxSs/view?usp=sharing"
+                      href="https://drive.google.com/file/d/1qnQ11xlMaG4f11GHOdtQc3Gmysg7uYul/view?usp=drive_link"
                       rel="noopener noreferrer"
                       target="_blank">
-                        resume
+                        front-end dev resume
                     </a>
                   </li>
                   <li>
-                    <a title="LinkedIn"
-                      href="https://www.linkedin.com/in/edmond-hwang-3614902aa/"
+                    <a title="Resume"
+                      className="to-bold"
+                      href="https://drive.google.com/file/d/1vY9UfWlvDq4HLzDVg0aSFddGvipTztgO/view?usp=drive_link"
                       rel="noopener noreferrer"
                       target="_blank">
-                        linkedin
+                        ui/ux design resume
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      title="GitHub"
+                      href="https://www.behance.net/edyhwang1"
+                      rel="noopener noreferrer"
+                      target="_blank">
+                        behance
                     </a>
                   </li>
                   <li>
@@ -130,6 +140,14 @@ const ProjectsLayout = (props: ProjectsLayoutProps) => {
                       rel="noopener noreferrer"
                       target="_blank">
                         github
+                    </a>
+                  </li>
+                  <li>
+                    <a title="LinkedIn"
+                      href="https://www.linkedin.com/in/edmond-hwang-3614902aa/"
+                      rel="noopener noreferrer"
+                      target="_blank">
+                        linkedin
                     </a>
                   </li>
                 </ul>

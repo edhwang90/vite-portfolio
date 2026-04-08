@@ -7,11 +7,22 @@ import GovRedesign from './pages/govredesign';
 import Storybook from './pages/storybook';
 import Sandbox from './pages/sandbox';
 import useMenuHandler from './hooks/useMenuHandler';
+import Select from 'react-select';
 
 import { ListIcon, XIcon } from "@phosphor-icons/react";
 import './App.scss';
 
-function App() {
+const resumeOptions = [
+  { value: 'https://drive.google.com/file/d/1qnQ11xlMaG4f11GHOdtQc3Gmysg7uYul/view?usp=drive_link', label: 'front-end dev resume' },
+  { value: 'https://drive.google.com/file/d/1vY9UfWlvDq4HLzDVg0aSFddGvipTztgO/view?usp=drive_link', label: 'ui/ux design resume'}
+]
+
+const samplesOptions = [
+  { value: 'https://www.behance.net/edyhwang1', label: 'behance'},
+  { value: 'https://github.com/edhwang90', label: 'github'}
+]
+
+const App = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isHome, setIsHome] = useState(true);
   const { disableFocus, showSideMenu } = useMenuHandler();
@@ -27,6 +38,11 @@ function App() {
   const showMenu = (visible: boolean) => {
     setIsMenuOpen(visible);
     showSideMenu(visible);
+  }
+
+  const onSelect = (e: any) => {
+    const newWindow = window.open(e.value, '_blank');
+    if (newWindow) newWindow.focus();
   }
 
   return (
@@ -54,32 +70,32 @@ function App() {
         <div className="side-menu-other">
           <ul>
             <li>
-              <a
-                className="side-menu-action"
-                title="Resume"
-                href="https://drive.google.com/file/d/12HREhXkfXXBlZdbBTZWuId3ab8WiKxSs/view?usp=sharing"
-                rel="noopener noreferrer"
-                target="_blank">
-                  resume
-              </a>
+              <Select
+                className="side-menu-action select"
+                classNamePrefix="react-select"
+                options={resumeOptions}
+                placeholder="resume"
+                unstyled
+                components={{
+                  IndicatorSeparator: () => null
+                }}
+                isSearchable={false}
+                onChange={(e) => onSelect(e)}
+              />
             </li>
             <li>
-              <a title="LinkedIn"
-                href="https://www.linkedin.com/in/edmond-hwang-3614902aa/"
-                rel="noopener noreferrer"
-                target="_blank">
-                  linkedin
-              </a>
-            </li>
-            <li>
-              <a
-                className="side-menu-action"
-                title="GitHub"
-                href="https://github.com/edhwang90"
-                rel="noopener noreferrer"
-                target="_blank">
-                  github
-              </a>
+              <Select
+                className="side-menu-action select"
+                classNamePrefix="react-select"
+                options={samplesOptions}
+                placeholder="code/screens"
+                unstyled
+                components={{
+                  IndicatorSeparator: () => null
+                }}
+                isSearchable={false}
+                onChange={(e) => onSelect(e)}
+              />
             </li>
           </ul>
         </div>

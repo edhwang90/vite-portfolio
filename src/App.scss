@@ -143,6 +143,32 @@ $side-menu-width: 212px;
   }
 }
 
+// select component
+.react-select__menu {
+  display: inline-block;
+  background-color: $white;
+  border: 1px solid $light-grey;
+  border-radius: 8px;
+  padding: 8px 0;
+  z-index: 3;
+  font-size: .875rem;
+  min-width: 200px;
+
+  .react-select__option {
+    padding: 8px 16px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $bg-grey;
+    }
+  }
+}
+
+.react-select__placeholder {
+  padding-right: 24px;
+  font-size: 1.25rem;
+}
+
 // media queries
 @media only screen and (max-width: 720px) {
   .nav-bar {

@@ -6,10 +6,19 @@ $link-color: #1CADFF;
   }
 }
 
+.port-links {
+  display: flex;
+
+  .select {
+    margin-right: 24px;
+  }
+}
+
 .port-links a {
   display: inline-block;
   margin-right: 56px;
   color: #2d2d2d;
+  line-height: 2;
 }
 
 .port-links a:last-of-type {
@@ -202,5 +211,11 @@ $link-color: #1CADFF;
       position: initial;
       margin-top: 24px;
     }
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .port-links {
+    display: block;
   }
 }
